@@ -127,10 +127,6 @@ Tax rate data is factual information from government sources and is not copyrigh
 
 ## Support
 
-For questions about using tax rates in SmartBooks:
-- Email: support@smartbooks.ca
-- Documentation: https://smartbooks.ca/docs/taxes
-
 For questions about official tax rates:
 - Contact the Canada Revenue Agency: 1-800-959-5525
 - Visit: https://www.canada.ca/en/revenue-agency.html
