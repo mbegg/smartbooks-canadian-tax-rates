@@ -1,0 +1,31 @@
+{
+  "province": "BC",
+  "province_name": "British Columbia",
+  "effective_from": "2025-01-01",
+  "effective_to": null,
+  "rates": [
+    {
+      "rate_id": "BC-GST-2025",
+      "tax_type": "GST",
+      "rate": 0.05,
+      "component": "GST",
+      "description": "Federal Goods and Services Tax",
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "source_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html",
+      "notes": "Federal portion, remitted to CRA"
+    },
+    {
+      "rate_id": "BC-PST-2025",
+      "tax_type": "PST",
+      "rate": 0.07,
+      "component": "PST",
+      "description": "British Columbia Provincial Sales Tax",
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "source_url": "https://www2.gov.bc.ca/gov/content/taxes/sales-taxes/pst",
+      "notes": "Provincial portion, remitted to BC Ministry of Finance. PST reinstated April 1, 2013 after HST repeal."
+    }
+  ],
+  "notes": "BC charges GST (5%) and PST (7%) separately, for a combined rate of 12%. PST is administered provincially."
+}

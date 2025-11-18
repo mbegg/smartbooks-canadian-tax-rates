@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/smartbooks/canadian-tax-rates/main/schema/rate-schema.json",
+  "title": "Canadian Provincial Tax Rate",
+  "description": "Schema for Canadian provincial and territorial tax rate files",
+  "type": "object",
+  "required": ["province", "province_name", "effective_from", "rates"],
+  "properties": {
+    "province": {
+      "type": "string",
+      "description": "Two-letter province/territory code",
+      "enum": ["AB", "BC", "MB", "NB", "NL", "NS", "NT", "NU", "ON", "PE", "QC", "SK", "YT", "CA"],
+      "examples": ["ON", "BC", "QC"]
+    },
+    "province_name": {
+      "type": "string",
+      "description": "Full province/territory name",
+      "examples": ["Ontario", "British Columbia", "Quebec"]
+    },
+    "effective_from": {
+      "type": "string",
+      "format": "date",
+      "description": "Date when these rates became effective (YYYY-MM-DD)",
+      "examples": ["2025-01-01"]
+    },
+    "effective_to": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "Date when these rates expire (null if current)",
+      "examples": ["2025-12-31", null]
+    },
+    "rates": {
+      "type": "array",
+      "description": "List of tax rates for this jurisdiction",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["rate_id", "tax_type", "rate", "component", "effective_from"],
+        "properties": {
+          "rate_id": {
+            "type": "string",
+            "description": "Unique identifier for this rate (PROVINCE-TYPE-YEAR)",
+            "pattern": "^[A-Z]{2}-[A-Z]{3,4}-\\d{4}$",
+            "examples": ["ON-HST-2025", "BC-PST-2025", "QC-QST-2025"]
+          },
+          "tax_type": {
+            "type": "string",
+            "description": "Type of tax",
+            "enum": ["GST", "HST", "PST", "QST"],
+            "examples": ["HST", "GST", "PST", "QST"]
+          },
+          "rate": {
+            "type": "number",
+            "description": "Tax rate as a decimal (e.g., 0.13 for 13%)",
+            "minimum": 0,
+            "maximum": 1,
+            "examples": [0.05, 0.13, 0.07, 0.09975]
+          },
+          "component": {
+            "type": "string",
+            "description": "Tax component type",
+            "enum": ["GST", "PST", "COMBINED", "QST"],
+            "examples": ["COMBINED", "GST", "PST"]
+          },
+          "description": {
+            "type": "string",
+            "description": "Human-readable description of the tax",
+            "examples": ["Ontario Harmonized Sales Tax", "Federal Goods and Services Tax"]
+          },
+          "effective_from": {
+            "type": "string",
+            "format": "date",
+            "description": "Date when this rate became effective",
+            "examples": ["2025-01-01"]
+          },
+          "effective_to": {
+            "type": ["string", "null"],
+            "format": "date",
+            "description": "Date when this rate expires (null if current)",
+            "examples": ["2025-12-31", null]
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri",
+            "description": "Official government source URL for this rate",
+            "examples": ["https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html"]
+          },
+          "notes": {
+            "type": "string",
+            "description": "Additional notes about this tax rate",
+            "examples": ["Combined federal (5%) and provincial (8%) portions", "Compounded on subtotal + GST"]
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional notes about tax rates in this jurisdiction"
+    }
+  }
+}

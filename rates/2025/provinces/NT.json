@@ -1,0 +1,20 @@
+{
+  "province": "NT",
+  "province_name": "Northwest Territories",
+  "effective_from": "2025-01-01",
+  "effective_to": null,
+  "rates": [
+    {
+      "rate_id": "NT-GST-2025",
+      "tax_type": "GST",
+      "rate": 0.05,
+      "component": "GST",
+      "description": "Federal Goods and Services Tax",
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "source_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html",
+      "notes": "Northwest Territories has no territorial sales tax"
+    }
+  ],
+  "notes": "Northwest Territories has no territorial sales tax. Only federal GST (5%) applies."
+}
