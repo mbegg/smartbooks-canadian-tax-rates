@@ -1,0 +1,20 @@
+{
+  "province": "NL",
+  "province_name": "Newfoundland and Labrador",
+  "effective_from": "2025-01-01",
+  "effective_to": null,
+  "rates": [
+    {
+      "rate_id": "NL-HST-2025",
+      "tax_type": "HST",
+      "rate": 0.15,
+      "component": "COMBINED",
+      "description": "Newfoundland and Labrador Harmonized Sales Tax",
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "source_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html",
+      "notes": "Combined federal (5%) and provincial (10%) portions. HST implemented April 1, 1997."
+    }
+  ],
+  "notes": "Newfoundland and Labrador uses a single HST rate of 15%. One of the original HST provinces."
+}

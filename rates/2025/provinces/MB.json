@@ -1,0 +1,31 @@
+{
+  "province": "MB",
+  "province_name": "Manitoba",
+  "effective_from": "2025-01-01",
+  "effective_to": null,
+  "rates": [
+    {
+      "rate_id": "MB-GST-2025",
+      "tax_type": "GST",
+      "rate": 0.05,
+      "component": "GST",
+      "description": "Federal Goods and Services Tax",
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "source_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html",
+      "notes": "Federal portion, remitted to CRA"
+    },
+    {
+      "rate_id": "MB-PST-2025",
+      "tax_type": "PST",
+      "rate": 0.07,
+      "component": "PST",
+      "description": "Manitoba Retail Sales Tax (RST)",
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "source_url": "https://www.gov.mb.ca/finance/taxation/taxes/retail.html",
+      "notes": "Provincial portion, remitted to Manitoba Finance. Known as Retail Sales Tax (RST) in Manitoba."
+    }
+  ],
+  "notes": "Manitoba charges GST (5%) and PST/RST (7%) separately, for a combined rate of 12%."
+}

@@ -1,0 +1,31 @@
+{
+  "province": "QC",
+  "province_name": "Quebec",
+  "effective_from": "2025-01-01",
+  "effective_to": null,
+  "rates": [
+    {
+      "rate_id": "QC-GST-2025",
+      "tax_type": "GST",
+      "rate": 0.05,
+      "component": "GST",
+      "description": "Federal Goods and Services Tax (TPS in French)",
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "source_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html",
+      "notes": "Federal portion, collected by Revenu Québec on behalf of CRA"
+    },
+    {
+      "rate_id": "QC-QST-2025",
+      "tax_type": "QST",
+      "rate": 0.09975,
+      "component": "QST",
+      "description": "Quebec Sales Tax (TVQ in French)",
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "source_url": "https://www.revenuquebec.ca/en/businesses/consumption-taxes/gsthst-and-qst/",
+      "notes": "QST is calculated on the subtotal PLUS GST (compounded). Effective rate: 9.975% of (subtotal + GST) = 10.47375% of subtotal. Combined with GST, total is 14.975%."
+    }
+  ],
+  "notes": "Quebec uses a unique compounded tax system. QST is calculated on the price including GST, making the effective combined rate 14.975% (not 14.975%). Revenu Québec administers both GST and QST in Quebec."
+}

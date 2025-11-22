@@ -1,0 +1,31 @@
+{
+  "province": "NS",
+  "province_name": "Nova Scotia",
+  "effective_from": "2025-01-01",
+  "effective_to": null,
+  "rates": [
+    {
+      "rate_id": "NS-HST-2025-Q1",
+      "tax_type": "HST",
+      "rate": 0.15,
+      "component": "COMBINED",
+      "description": "Nova Scotia Harmonized Sales Tax (15%)",
+      "effective_from": "2025-01-01",
+      "effective_to": "2025-03-31",
+      "source_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html",
+      "notes": "Combined federal (5%) and provincial (10%) portions. Valid until March 31, 2025."
+    },
+    {
+      "rate_id": "NS-HST-2025-Q2",
+      "tax_type": "HST",
+      "rate": 0.14,
+      "component": "COMBINED",
+      "description": "Nova Scotia Harmonized Sales Tax (14%)",
+      "effective_from": "2025-04-01",
+      "effective_to": null,
+      "source_url": "https://novascotia.ca/finance/en/home/taxation/tax101/default.aspx",
+      "notes": "Combined federal (5%) and provincial (9%) portions. Reduced rate effective April 1, 2025 - 1% reduction in provincial portion."
+    }
+  ],
+  "notes": "Nova Scotia HST reduced from 15% to 14% effective April 1, 2025. One of the original HST provinces (HST implemented April 1, 1997)."
+}

@@ -1,0 +1,20 @@
+{
+  "province": "PE",
+  "province_name": "Prince Edward Island",
+  "effective_from": "2025-01-01",
+  "effective_to": null,
+  "rates": [
+    {
+      "rate_id": "PE-HST-2025",
+      "tax_type": "HST",
+      "rate": 0.15,
+      "component": "COMBINED",
+      "description": "Prince Edward Island Harmonized Sales Tax",
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "source_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html",
+      "notes": "Combined federal (5%) and provincial (10%) portions. HST implemented April 1, 2013."
+    }
+  ],
+  "notes": "Prince Edward Island uses a single HST rate of 15%. Joined HST system in 2013."
+}

@@ -1,0 +1,31 @@
+{
+  "province": "SK",
+  "province_name": "Saskatchewan",
+  "effective_from": "2025-01-01",
+  "effective_to": null,
+  "rates": [
+    {
+      "rate_id": "SK-GST-2025",
+      "tax_type": "GST",
+      "rate": 0.05,
+      "component": "GST",
+      "description": "Federal Goods and Services Tax",
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "source_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html",
+      "notes": "Federal portion, remitted to CRA"
+    },
+    {
+      "rate_id": "SK-PST-2025",
+      "tax_type": "PST",
+      "rate": 0.06,
+      "component": "PST",
+      "description": "Saskatchewan Provincial Sales Tax",
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "source_url": "https://www.saskatchewan.ca/business/taxes-licensing-and-reporting/provincial-taxes-policies-and-bulletins/provincial-sales-tax",
+      "notes": "Provincial portion, remitted to Saskatchewan Ministry of Finance"
+    }
+  ],
+  "notes": "Saskatchewan charges GST (5%) and PST (6%) separately, for a combined rate of 11%."
+}

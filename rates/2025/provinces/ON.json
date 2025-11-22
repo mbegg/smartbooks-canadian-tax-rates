@@ -1,0 +1,20 @@
+{
+  "province": "ON",
+  "province_name": "Ontario",
+  "effective_from": "2025-01-01",
+  "effective_to": null,
+  "rates": [
+    {
+      "rate_id": "ON-HST-2025",
+      "tax_type": "HST",
+      "rate": 0.13,
+      "component": "COMBINED",
+      "description": "Ontario Harmonized Sales Tax",
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "source_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html",
+      "notes": "Combined federal (5%) and provincial (8%) portions. HST implemented July 1, 2010."
+    }
+  ],
+  "notes": "Ontario uses a single HST rate of 13%. Businesses charge and remit HST to CRA, which distributes the provincial portion."
+}
