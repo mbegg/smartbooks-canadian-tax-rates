@@ -1,4 +1,4 @@
-# SmartBooks Canadian Tax Rates
+# ELK Books Canadian Tax Rates
 
 Centralized repository for Canadian provincial and territorial tax rates used by SmartBooks accounting software.
 
@@ -105,9 +105,9 @@ All rates are sourced from official government agencies:
 - [Canada Revenue Agency (CRA)](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html)
 - Provincial revenue agencies (see individual rate files for specific URLs)
 
-## Usage in SmartBooks
+## Usage in ELK Books
 
-SmartBooks automatically checks this repository for tax rate updates:
+ELK Books automatically checks this repository for tax rate updates:
 1. On startup (if enabled in settings)
 2. Via Tools → Tax Rates Manager → "Check for Updates"
 3. Manual import of specific versions
